@@ -45,13 +45,13 @@ O serviço de transcrição estará escutando na porta `3434` do IP da sua VPS. 
 **Exemplo de requisição (usando cURL):**
 ```bash
 curl -X POST \
-  http://<IP_DA_SUA_VPS>:3434/ \
+  http://0.0.0.0:3434/ \
   -H 'Content-Type: application/json' \
   -d '{
     "audio_base64": "..."
   }'
 ```
-Substitua `<IP_DA_SUA_VPS>` pelo endereço de IP do seu servidor e `...` pelo seu áudio codificado em base64.
+Substitua `0.0.0.0` pelo endereço de IP do seu servidor e `...` pelo seu áudio codificado em base64.
 
 ## Passo 4: Verificando os Logs
 
