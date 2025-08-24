@@ -49,7 +49,7 @@ curl -X POST \
   -H 'Content-Type: application/json' \
   -d '{
     "audio_base64": "...",
-    "format": "ogg"
+    "format": "ogg" (opcional)
   }'
 ```
 Substitua `0.0.0.0` pelo endereço de IP do seu servidor, `...` pelo seu áudio codificado em base64 e `ogg` pelo formato do áudio. Se você não enviar o campo "format", o sistema continuará assumindo o formato "ogg" como padrão.
