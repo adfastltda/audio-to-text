@@ -76,8 +76,3 @@ Se você gosta deste projeto e quer apoiar o desenvolvimento, pode contribuir co
 Toda ajuda e sugestoes é bem-vinda e motivadora!  
 
 Obrigado pelo apoio! 🙏
-
-Para parar o serviço e remover o contêiner, execute:
-```bash
-docker compose down
-```
