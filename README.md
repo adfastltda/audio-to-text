@@ -2,6 +2,7 @@
 
 Este guia explica como implantar e executar o serviço de transcrição de áudio `adfastltda/transcript` em um servidor privado virtual (VPS) usando Docker.
 
+---
 ## Pré-requisitos
 
 Antes de começar, certifique-se de que você tem o seguinte instalado em sua VPS:
@@ -9,6 +10,7 @@ Antes de começar, certifique-se de que você tem o seguinte instalado em sua VP
 *   **Docker:** [Instruções de instalação](https://docs.docker.com/engine/install/)
 *   **Docker Compose:** [Instruções de instalação](https://docs.docker.com/compose/install/) (geralmente vem com o Docker Engine)
 
+---
 ## Passo 1: Crie o arquivo `docker-compose.yml`
 
 Crie um arquivo com o nome `docker-compose.yml` em um diretório de sua escolha na VPS e cole o seguinte conteúdo nele:
@@ -38,6 +40,7 @@ docker compose up -d
 
 O `-d` executa o serviço em modo "detached" (em segundo plano).
 
+---
 ## Passo 3: Como Usar
 
 O serviço de transcrição estará escutando na porta `3434` do IP da sua VPS. Para usar, envie uma requisição `POST` para o endpoint `http://<IP_DA_SUA_VPS>:3434/` com um corpo JSON contendo o áudio em base64:
@@ -62,6 +65,18 @@ docker compose logs
 ```
 
 ## Passo 5: Parando o Serviço
+
+---
+##### ☕ Buy Me a Coffee
+
+Se você gosta deste projeto e quer apoiar o desenvolvimento, pode contribuir com um café!  
+
+**PIX:** `pix@adfastltda.com.br`
+**PayPal:** [Doar](https://www.paypal.com/ncp/payment/TSLA567NR39LA) 
+
+Toda ajuda e sugestoes é bem-vinda e motivadora!  
+
+Obrigado pelo apoio! 🙏
 
 Para parar o serviço e remover o contêiner, execute:
 ```bash
