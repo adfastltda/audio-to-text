@@ -64,7 +64,6 @@ Para ver os logs do serviço em execução, use o comando:
 docker compose logs
 ```
 
-## Passo 5: Parando o Serviço
 
 ---
 ##### ☕ Buy Me a Coffee
