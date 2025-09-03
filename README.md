@@ -51,7 +51,7 @@ curl -X POST \
   http://0.0.0.0:3434/ \
   -H 'Content-Type: application/json' \
   -d '{
-    "audio_base64": "...",
+    "audio_base64 or audio_url": "...",
     "format": "ogg" (opcional)
   }'
 ```
